@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - ABC Fitness Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="ABC Fitness Studio Logo" class="logo" />
+    <h1>ABC Fitness Studio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Custom Page.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Gallery</h2>
+    <p>Explore our fitness classes and gear selections below. Click "Add to Cart" to begin building your personalized wellness package.</p>
+
+    <button id="view-cart-btn" class="view-cart" style="float: right; margin-bottom: 10px;">View Cart</button>
+
+    <div class="product-gallery">
+      <div class="product-item" data-id="1" data-name="Yoga" data-price="25">
+        <img src="images/image1.png" alt="Yoga class" />
+        <p>Yoga</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="2" data-name="Pilates" data-price="30">
+        <img src="images/image2.png" alt="Pilates class" />
+        <p>Pilates</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="3" data-name="Kickboxing" data-price="35">
+        <img src="images/image3.png" alt="Kickboxing class" />
+        <p>Kickboxing</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="4" data-name="Yoga Mat" data-price="20">
+        <img src="images/image4.png" alt="Yoga mat" />
+        <p>Yoga Mat</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="5" data-name="Water Bottle" data-price="15">
+        <img src="images/image5.png" alt="Water bottle" />
+        <p>Water Bottle</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="6" data-name="T-shirt" data-price="22">
+        <img src="images/image6.png" alt="ABC Fitness branded T-shirt" />
+        <p>T-shirt</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="7" data-name="Group Yoga" data-price="28">
+        <img src="images/image7.png" alt="Group Yoga class" />
+        <p>Group Yoga</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="8" data-name="Group Pilates" data-price="30">
+        <img src="images/image8.png" alt="Group Pilates class" />
+        <p>Group Pilates</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="9" data-name="Group Kickboxing" data-price="35">
+        <img src="images/image9.png" alt="Group Kickboxing class" />
+        <p>Group Kickboxing</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+        </div>
+  </main>
+
+  <footer>
+    <section class="newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <form id="subscribeForm">
+        <input type="email" id="email" placeholder="Enter your email" aria-label="Email address" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section class="social-media">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+      </ul>
+    </section>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Custom Page.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <div id="cart-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <span id="close-cart" class="close" aria-label="Close Cart">&times;</span>
+      <h3>Your Cart</h3>
+      <ul id="cart-items" class="cart-items"></ul>
+      <button id="clear-cart-btn" class="clear-cart">Clear Cart</button>
+      <button id="process-order-btn" class="process-order">Process Order</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
